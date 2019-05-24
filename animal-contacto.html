@@ -10,25 +10,31 @@
   <title>Pets Rescue - Morena</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
-  <nav class="navbar navbar-light">
-    <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
-    <ul class="inline mr-auto ml-auto">
-      <li class="list-inline-item">
-        <a href="list.html">Inicio</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="newAnimal.html">¡Quiero dar en adopción!</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="blog.html">Blog: Adopciones exitosas</a>
-      </li>
-    </ul>
-    <ul class="registrarse">
-      <li><a href="">Iniciar seción</a></li>
-      <li> o <a href="">Registrarse</a></li>
-    </ul>
-  </nav>
-</head>
+  <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a href="list.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="newAnimal.html">¡Quiero dar en adopción!</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html">Blog: Adopciones exitosas</a>
+          </li>
+        </ul>
+        <ul class="nav-item registrarse">
+          <li><a href="">Iniciar seción</a></li>
+          <li> o <a href="">Registrarse</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
 
 <body>
   <div class="container-fluid">
@@ -44,7 +50,7 @@
           <li>Categorias:</li>
           <li>
             <ul>
-              <li>Tipo:</li>
+              <li>Especie:</li>
               <li><a href="">Perros</a></li>
               <li><a href="">Gatos</a></li>
               <li><a href="">Aves</a></li>
@@ -84,29 +90,30 @@
       </div>
       <div class="col contenido">
         <div class="row">
-          <div class="col col-6">
+          <div class="col col col-12 col-sm-6">
             <img src="assets/perro1.png" alt="En-adopción" class="animal">
-            <br>
-            <h1>Datos para contactarte:</h1>
-            <ul>
-              <li>Nombre: Brian Acosta</li>
-              <li>Email: brianacostamartinez@gmail.com</li>
-              <li>Teléfono: 098 806 266</li>
-            </ul>
+            <div class="datos-contacto">
+              <ul>
+                <li><h1>Datos para contactarte:</h1></li>
+                <li><span>Nombre:</span> Brian Acosta</li>
+                <li><span>Email:</span> brianacostamartinez@gmail.com</li>
+                <li><span>Teléfono:</span> 098 806 266</li>
+              </ul>
+            </div>
           </div>
-          <div class="col col-6">
+          <div class="col col col-12 col-sm-6">
             <ul class="datos">
-              <li>Morena</li>
-              <li>Datos:</li>
-              <li>Tipo: Perro</li>
-              <li>Sexo: Hembra</li>
-              <li>Tamaño actual: Mediano</li>
-              <li>Edad: 1 año, 2 meses y 14 días</li>
-              <li>Raza: Mestizo</li>
-              <li>Barrio: Aguada</li>
-              <li>Color de ojos: Marrón</li>
-              <li>Color de pelo: Negro</li>
-              <li>Descripcion: Fue encontrada por la calle arenal grande esquina martin garcia, busque al posible dueño
+              <li><h1>Morena</h1></li>
+              <li><span>Especie:</span> Perro</li>
+              <li><span>Sexo:</span> Hembra</li>
+              <li><span>Tamaño actual:</span> Mediano</li>
+              <li><span>Edad:</span> 1 año, 2 meses y 14 días</li>
+              <li><span>Raza:</span> Mestizo</li>
+              <li><span>Barrio:</span> Aguada</li>
+              <li><span>Color de ojos:</span> Marrón</li>
+              <li><span>Color de pelo:</span> Negro</li>
+              <li><span>Descripcion:</span> Fue encontrada por la calle arenal grande esquina martin garcia, busque al
+                posible dueño
                 y no lo encontre al parecer era callejera, y bueno no puedo hacerme cargo por mucho tiempo mas, ya tengo
                 otra mascota</li>
             </ul>

@@ -10,93 +10,99 @@
   <title>Pets Rescue - Registro</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
-  <nav class="navbar navbar-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
-    <ul class="inline mr-auto ml-auto">
-      <li class="list-inline-item">
-        <a href="list.html">Inicio</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="newAnimal.html">¡Quiero dar en adopción!</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="blog.html">Blog: Adopciones exitosas</a>
-      </li>
-    </ul>
-    <ul class="registrarse">
-      <li><a href="">Iniciar seción</a></li>
-      <li> o <a href="">Registrarse</a></li>
-    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item">
+          <a href="list.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="newAnimal.html">¡Quiero dar en adopción!</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html">Blog: Adopciones exitosas</a>
+        </li>
+      </ul>
+      <ul class="nav-item registrarse">
+        <li><a href="">Iniciar seción</a></li>
+        <li> o <a href="">Registrarse</a></li>
+      </ul>
+    </div>
   </nav>
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      <h1>Registra un animal para dar en adopción</h1>
-    </div>
-    <div class="row">
-      <form class="form" action="url.php" method="post">
-        <label for="nombre-animal">Nombre:</label>
-        <input type="text" id="nombre-animal" placeholder="si aún no tiene deje este campo vacío">
-        <br>
-        <label for="tipo">Tipo:</label>
-        <select required id="tipo">
-          <option value="">Que mascota es</option>
-          <option value="perro">Perro</option>
-          <option value="gato">Gato</option>
-          <option value="ave">Ave</option>
-          <option value="otro">Otro</option>
-        </select>
-        <br>
-        <label for="sexo">Sexo:</label>
-        <select required id="sexo">
-          <option value="">Selecciona el sexo</option>
-          <option value="macho">Macho</option>
-          <option value="hembra">Hembra</option>
-        </select>
-        <br>
-        <label for="tamaño">Tamaño actual:</label>
-        <select required id="tamaño">
-          <option value="">Seleccione el tamaño aproximado</option>
-          <option value="pequeño">Pequeño (&#60; 15Kg)</option>
-          <option value="mediano">Mediano (15 - 25Kg)</option>
-          <option value="grande">Grande (&#62; 25Kg)</option>
-        </select>
-        <br>
-        <label for="fecha">Fecha de nacimiento aproximado</label>
-        <input required type="date" id="fecha">
-        <br>
-        <label for="raza">Raza:</label>
-        <input type="text" id="raza" placeholder="si desconoce deje este campo vacío">
-        <br>
-        <label for="barrio">Barrio:</label>
-        <input type="text" id="barrio" placeholder="barrio donde vive con el animal">
-        <br>
-        <label for="color-ojos">Color de ojos:</label>
-        <input type="text" id="color-ojos" placeholder="Ingrese el color de ojos">
-        <br>
-        <label for="color-pelo">Color de pelo:</label>
-        <input type="text" id="color-pelo" placeholder="Ingrese el color del pelaje">
-        <br>
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" placeholder="Cuentanos más sobre esta mascota"></textarea>
-        <br>
-        <label for="imagen">Sube una imagen de la mascota</label>
-        <input type="file" id="imagen">
-        <br>
-        <h1>Datos para contactarte:</h1>
-        <label for="nombre-persona">Nombre:</label>
-        <input required type="text" id="nombre-persona" placeholder="Ingresa tu nombre">
-        <br>
-        <label for="email">Email:</label>
-        <input required type="email" id="email" placeholder="Ingresa tu Email">
-        <br>
-        <label for="telefono">Teléfono:</label>
-        <input required type="text" id="telefono" placeholder="Un telefono para contactarte">
-        <br>
-        <button class="adoptar" type="submit">Dar en adopción</button>
-      </form>
+    <div class="row formulario">
+      <div class="col ">
+        <form action="url.php" method="post">
+          <h1>Registra un animal para dar en adopción:</h1>
+          <label for="nombre-animal"><span>Nombre:</span></label>
+          <input type="text" id="nombre-animal" placeholder="si aún no tiene deje este campo vacío">
+          <br>
+          <label for="especie"><span>Especie:</span></label>
+          <select required id="especie">
+            <option value="">Que mascota es</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="otro">Otro</option>
+          </select>
+          <br>
+          <label for="sexo"><span>Sexo:</span></label>
+          <select required id="sexo">
+            <option value="">Selecciona el sexo</option>
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+          </select>
+          <br>
+          <label for="tamaño"><span>Tamaño actual:</span></label>
+          <select required id="tamaño">
+            <option value="">Seleccione el tamaño aproximado</option>
+            <option value="pequeño">Pequeño (&#60; 15Kg)</option>
+            <option value="mediano">Mediano (15 - 25Kg)</option>
+            <option value="grande">Grande (&#62; 25Kg)</option>
+          </select>
+          <br>
+          <label for="fecha"><span>Fecha de nacimiento</span></label>
+          <input required type="date" id="fecha">
+          <br>
+          <label for="raza"><span>Raza:</span></label>
+          <input type="text" id="raza" placeholder="si desconoce deje este campo vacío">
+          <br>
+          <label for="barrio"><span>Barrio:</span></label>
+          <input type="text" id="barrio" placeholder="barrio donde vive con el animal">
+          <br>
+          <label for="color-ojos"><span>Color de ojos:</span></label>
+          <input type="text" id="color-ojos" placeholder="Ingrese el color de ojos">
+          <br>
+          <label for="color-pelo"><span>Color de pelo:</span></label>
+          <input type="text" id="color-pelo" placeholder="Ingrese el color del pelaje">
+          <br>
+          <label for="descripcion"><span>Descripción:</span></label>
+          <textarea id="descripcion" placeholder="Cuentanos más sobre esta mascota"></textarea>
+          <br>
+          <label for="imagen"><span>Sube una imagen</span></label>
+          <input type="file" id="imagen">
+          <br>
+          <h1>Datos para contactarte:</h1>
+          <label for="nombre-persona"><span>Nombre:</span></label>
+          <input required type="text" id="nombre-persona" placeholder="Ingresa tu nombre">
+          <br>
+          <label for="email"><span>Email:</span></label>
+          <input required type="email" id="email" placeholder="Ingresa tu Email">
+          <br>
+          <label for="telefono"><span>Teléfono:</span></label>
+          <input required type="text" id="telefono" placeholder="Un teléfono para contactarte">
+          <br>
+          <button class="adoptar" type="submit">Dar en adopción</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -111,5 +117,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+
 
 </html>

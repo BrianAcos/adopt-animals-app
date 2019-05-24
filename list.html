@@ -10,27 +10,49 @@
   <title>Pets Rescue</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
-  <nav class="navbar navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
-    <ul class="inline mr-auto ml-auto">
-      <li class="list-inline-item">
-        <a href="list.html">Inicio</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="newAnimal.html">¡Quiero dar en adopción!</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="blog.html">Blog: Adopciones exitosas</a>
-      </li>
-    </ul>
-    <ul class="registrarse">
-      <li><a href="">Iniciar seción</a></li>
-      <li> o <a href="">Registrarse</a></li>
-    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item">
+          <a href="list.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="newAnimal.html">¡Quiero dar en adopción!</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html">Blog: Adopciones exitosas</a>
+        </li>
+      </ul>
+      <ul class="nav-item registrarse">
+        <li><a href="">Iniciar seción</a></li>
+        <li> o <a href="">Registrarse</a></li>
+      </ul>
+    </div>
   </nav>
 </head>
 
 <body>
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+  <button class="filtros">FILTROS ></button>
+  <button class="filtros">FILTROS ></button>
+  <button class="filtros">FILTROS ></button>
+  <button class="filtros">FILTROS ></button>
+
+
   <div class="container-fluid">
     <div class="row">
       <div class="col col-auto categorias">
@@ -44,35 +66,76 @@
           <li>Categorias:</li>
           <li>
             <ul>
-              <li>Tipo:</li>
-              <li><a href="">Perros</a></li>
-              <li><a href="">Gatos</a></li>
-              <li><a href="">Aves</a></li>
-              <li><a href="">Otros</a></li>
+              <li>Especie:</li>
+              <li>
+                <input id="perros" type="checkbox">
+                <label for="perros">Perros</label>
+              </li>
+              <li>
+                <input id="gatos" type="checkbox">
+                <label for="gatos">Gatos</label>
+              </li>
+              <li>
+                <input id="aves" type="checkbox">
+                <label for="aves">Aves</label>
+              </li>
+              <li>
+                <input id="otros" type="checkbox">
+                <label for="otros">Otros</label>
+              </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>Edad:</li>
-              <li><a href="">Cachorro (&#60;1 año)</a></li>
-              <li><a href="">Adulto (1 - 6 años)</a></li>
-              <li><a href="">Abuelito (&#62;6 años)</a></li>
+              <li>
+                <input id="cachorro" type="checkbox">
+                <label for="cachorro">Cachorro (&#60;1 año)</label>
+              </li>
+              <li>
+                <input id="adulto" type="checkbox">
+                <label for="adulto">Adulto (1 - 6 años)</label>
+              </li>
+              <li>
+                <input id="abuelito" type="checkbox">
+                <label for="abuelito">Abuelito (&#62;6 años)</label>
+              </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>Sexo:</li>
-              <li><a href="">Macho</a></li>
-              <li><a href="">Hembra</a></li>
+              <li>
+                <input id="macho" type="checkbox">
+                <label for="macho">Macho</label>
+              </li>
+              <li>
+                <input id="hembra" type="checkbox">
+                <label for="hembra">Hembra</label>
+              </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>Tamaño:</li>
-              <li><a href="">Pequeño (&#60; 15Kg)</a></li>
-              <li><a href="">Mediano (15 - 25Kg)</a></li>
-              <li><a href="">Grande (&#62; 25Kg)</a></li>
+              <li>
+                <input id="pequeño" type="checkbox">
+                <label for="pequeño">Pequeño (&#60; 15Kg)</label>
+              </li>
+              <li>
+                <input id="mediano" type="checkbox">
+                <label for="mediano">Mediano (15 - 25Kg)</label>
+              </li>
+              <li>
+                <input id="grande" type="checkbox">
+                <label for="grande">Grande (&#62; 25Kg)</label>
+              </li>
             </ul>
+          </li>
+          <li>
+            <form>
+              <button>Filtrar Seleccionados</button>
+            </form>
           </li>
         </ul>
         <ul>
@@ -84,35 +147,47 @@
       </div>
       <div class="col contenido">
         <div class="row">
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro1.png" class="animal" alt="perro1"></a>
-            <h2>Morena &#9792;</h2>
-            <p>1 año, 2 meses y 14 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro1.png" class="animal" alt="perro1"></a>
+              <h1>Morena &#9792;</h1>
+              <p>1 año, 2 meses y 14 días</p>
+            </div>
           </div>
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro2.png" class="animal" alt="perro1"></a>
-            <h2>Toby &#9794;</h2>
-            <p>3 año, 5 meses y 21 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro2.png" class="animal" alt="perro1"></a>
+              <h1>Toby &#9794;</h1>
+              <p>3 años, 5 meses y 21 días</p>
+            </div>
           </div>
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro3.png" class="animal" alt="perro1"></a>
-            <h2>Luna &#9792;</h2>
-            <p>2 año, 1 mes y 5 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro3.png" class="animal" alt="perro1"></a>
+              <h1>Luna &#9792;</h1>
+              <p>2 años, 1 mes y 5 días</p>
+            </div>
           </div>
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro4.png" class="animal" alt="perro1"></a>
-            <h2>Rocco &#9794;</h2>
-            <p>5 meses y 23 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro4.png" class="animal" alt="perro1"></a>
+              <h1>Rocco &#9794;</h1>
+              <p>5 meses y 23 días</p>
+            </div>
           </div>
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro5.png" class="animal" alt="perro1"></a>
-            <h2>Lola &#9792;</h2>
-            <p>1 año, 9 meses y 28 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro5.png" class="animal" alt="perro1"></a>
+              <h1>Lola &#9792;</h1>
+              <p>1 año, 9 meses y 28 días</p>
+            </div>
           </div>
-          <div class="col col-4">
-            <a href="animal.html"><img src="assets/perro6.png" class="animal" alt="perro1"></a>
-            <h2>Otto &#9794;</h2>
-            <p>3 año, 11 meses y 17 días</p>
+          <div class="col col-12 col-lg-4 col-sm-6">
+            <div class="tarjeta">
+              <a href="animal.html"><img src="assets/perro6.png" class="animal" alt="perro1"></a>
+              <h1>Otto &#9794;</h1>
+              <p>3 años, 11 meses y 17 días</p>
+            </div>
           </div>
         </div>
       </div>
@@ -128,5 +203,15 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+
+<footer class="footer-bg">
+  <div class="container">
+    <p class="float-right">
+      <a href="#"><img src="assets/favicon.ico" width="50" height="50" class="d-inline-block align-center"
+          alt="Subir"></a>
+    </p>
+
+  </div>
+</footer>
 
 </html>
