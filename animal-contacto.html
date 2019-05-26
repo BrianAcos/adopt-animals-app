@@ -11,90 +11,49 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
   <nav class="navbar navbar-expand-md navbar-light">
-      <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mr-auto">
-          <li class="nav-item">
-            <a href="list.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="newAnimal.html">¡Quiero dar en adopción!</a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.html">Blog: Adopciones exitosas</a>
-          </li>
-        </ul>
-        <ul class="nav-item registrarse">
-          <li><a href="">Iniciar seción</a></li>
-          <li> o <a href="">Registrarse</a></li>
-        </ul>
-      </div>
-    </nav>
-  </head>
+    <a class="navbar-brand" href="list.html"><img src="assets/LOGO.png" alt="Pets-Rescue" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item">
+          <a href="list.html">Inicio</a>
+        </li>
+        <li>
+          <h5>.</h5>
+        </li>
+        <li class="nav-item">
+          <a href="newAnimal.html">¡Quiero dar en adopción!</a>
+        </li>
+        <li>
+          <h5>.</h5>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+      <ul class="nav-item registrarse">
+        <li><a href="">Iniciar seción</a></li>
+        <li> o <a href="">Registrarse</a></li>
+      </ul>
+    </div>
+  </nav>
+</head>
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col col-auto categorias">
-        <form>
-          <input type="search" placeholder="¿Que buscas?">
-          <button class="search">
-            <h6>&#128270;</h6>
-          </button>
-        </form>
-        <ul>
-          <li>Categorias:</li>
-          <li>
-            <ul>
-              <li>Especie:</li>
-              <li><a href="">Perros</a></li>
-              <li><a href="">Gatos</a></li>
-              <li><a href="">Aves</a></li>
-              <li><a href="">Otros</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Edad:</li>
-              <li><a href="">Cachorro (&#60;1 año)</a></li>
-              <li><a href="">Adulto (1 - 6 años)</a></li>
-              <li><a href="">Abuelito (&#62;6 años)</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Sexo:</li>
-              <li><a href="">Macho</a></li>
-              <li><a href="">Hembra</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Tamaño:</li>
-              <li><a href="">Pequeño (&#60; 15Kg)</a></li>
-              <li><a href="">Mediano (15 - 25Kg)</a></li>
-              <li><a href="">Grande (&#62; 25Kg)</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="list.html">Publicaciones recientes</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Favoritos</a></li>
-        </ul>
-      </div>
+    <div class="row background">
       <div class="col contenido">
         <div class="row">
           <div class="col col col-12 col-sm-6">
             <img src="assets/perro1.png" alt="En-adopción" class="animal">
             <div class="datos-contacto">
               <ul>
-                <li><h1>Datos para contactarte:</h1></li>
+                <li>
+                  <h1>Datos para contactarte:</h1>
+                </li>
                 <li><span>Nombre:</span> Brian Acosta</li>
                 <li><span>Email:</span> brianacostamartinez@gmail.com</li>
                 <li><span>Teléfono:</span> 098 806 266</li>
@@ -103,7 +62,9 @@
           </div>
           <div class="col col col-12 col-sm-6">
             <ul class="datos">
-              <li><h1>Morena</h1></li>
+              <li>
+                <h1>Morena</h1>
+              </li>
               <li><span>Especie:</span> Perro</li>
               <li><span>Sexo:</span> Hembra</li>
               <li><span>Tamaño actual:</span> Mediano</li>
@@ -119,6 +80,10 @@
             </ul>
           </div>
         </div>
+        <div class="row comentar">
+          <input type="text" id="comentar" placeholder="Comentar...">
+          <button>&#62;</button>
+        </div>
       </div>
     </div>
   </div>
@@ -133,5 +98,20 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+
+<footer class="footer-bg">
+  <div class="container-fluid">
+    <div class="row subir">
+      <ul>
+        <li class=""><a href="">Contactenos</a></li>
+        <li>
+          <h6>.</h6>
+        </li>
+        <li class=""><a href="">Politica de privacidad</a></li>
+
+      </ul>
+      <a href="#"><img src="assets/Subir.png" alt="Subir" class=""></a>
+    </div>
+</footer>
 
 </html>

@@ -3,11 +3,13 @@ html, .navbar, a {
 }
 .logo {
     width: 100px;
-    margin-left: 15px;
+    margin-left: 40px;
+    border-radius: 0px;
 }
 .navbar {
     background-color: #eeeeee;
     box-shadow: 0px 3px 5px #0673FA;
+    z-index: 1;
 }
 .nav-item {
     padding: 5px 20px;
@@ -24,6 +26,10 @@ html, .navbar, a {
     background-color: #eeeeee;
     padding-right: 0px;
     box-shadow: 3px 5px 5px #0673FA;
+    height: 99%;
+    margin-bottom: 20px;
+    z-index: 2;
+    width: 238px;
 }
 .categorias > input {
     width: 170px;
@@ -44,9 +50,16 @@ li > ul > :first-child {
     padding: 10px 0px;
     font: 20px bold;
 }
+.background {
+    background-size: 10%;
+    background-image: url(assets/pata.png);
+}
 .contenido {
     margin: 20px;
     padding: 0px;
+}
+.contenido col {
+    align-items: flex-end;
 }
 .animal {
     width: 100%;
@@ -57,7 +70,9 @@ li > ul > :first-child {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 0px 10px 0px blue;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    background: #eeeeee;
 }
 .tarjeta img {
     opacity: 0.9;
@@ -77,7 +92,7 @@ button {
 }
 .adoptar {
     display: flex;
-    margin: auto;
+    margin: 20px auto;
     justify-content: center;
     width: 150px;
 }
@@ -101,20 +116,28 @@ span {
     font: 20px bold;
 }
 .contacto {
-    margin-top: 20px;
+    margin: 20px 0px;
     width: 80px;
 }
 .contacto > a {
     color: white;
 }
+.busqueda {
+    padding-top: 10px;
+}    
 .formulario label {
     padding: 10px 20px;
     text-align: right;
     width: 210px;
 }
 .formulario form {
-    display: flexbox;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0673FA;
+    padding: 20px;
+    margin: 20px;
+    background-color: #eeeeee;
 }
 .formulario h1 {
     margin-top: 40px;
@@ -125,8 +148,11 @@ span {
     padding: 5px;
     border-radius: 5px;
 }
+.formulario > div {
+    margin: auto;
+}
 .formulario {
-    background-color: #eeeeee;
+    background-color: white;
 }
 
 h1 {
@@ -144,20 +170,89 @@ a:hover, label:hover {
     color: #0673FA;
 
 }
-
-@media all and (max-width: 768px) {
-    .categorias {
-        visibility: collapse;
+.barra-blog {
+    width: 238px;
+    height: 99%;
+}
+.barra-blog li {
+    margin-left: 10px;
+    padding: 15px 5px;
+    max-width: 170px;
+    list-style-type: disc;
+}
+.contenido-blog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.contenido-blog > div {
+    margin: 0px 10px;
+    background: #eeeeee;
+    border-radius: 20px;
+    padding: 20px;
+}
+.contenido-blog li:first-child {
+    font-size: 25px;
+    margin-left: -10px;
+}
+.contenido-blog ul li:nth-child(n+2) {
+    list-style-type: disc; 
+    padding-top: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.subir {
+    display: flex;
+    justify-content: space-between;
+    background: #eeeeee;
+    align-items: center;
+    box-shadow: 0px -5px 5px #0673FA; 
+}
+.subir ul {
+    display: flex;
+    margin-top: 20px;
+}
+.subir li {
+    display: flex;
+    margin: 10px;
+}
+.subir img {
+    padding-right: 20px;
+}
+img {
+    border-radius: 20px;
+}
+@media all and (max-width: 700px) {
+    .asd {
+        margin-left: -238px;
     }
-        .contenido {
-            margin-left: -210px;
-        }
+}
+@media all and (max-width: 700px) {
+    #sidebar.ocultar {
+        margin-left: 0px;
     }
-    @media all and (min-width: 768px) {
-        .filtros, .btn {
-            visibility: collapse;
-        }
-        
-.filtros, .btn {
-    position: absolute;
+}
+@media all and (min-width: 700px) {
+    #sidebar.ocultar {
+        margin-left: -238px;
+    }
+}   
+#sidebar {
+    transition: all 1s ease-out;
+    visibility: visible;
+}
+.deslizable {
+    z-index: 2;
+    position: fixed;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.comentar button {
+    display: flex;
+    margin-right: auto;
+}
+.comentar input {
+    border-radius: 10px;
+    display: flex;
+    margin-left: auto;
 }

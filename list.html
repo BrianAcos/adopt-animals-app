@@ -21,11 +21,17 @@
         <li class="nav-item">
           <a href="list.html">Inicio</a>
         </li>
+        <li>
+          <h5>.</h5>
+        </li>
         <li class="nav-item">
           <a href="newAnimal.html">¡Quiero dar en adopción!</a>
         </li>
+        <li>
+          <h5>.</h5>
+        </li>
         <li class="nav-item">
-          <a href="blog.html">Blog: Adopciones exitosas</a>
+          <a href="blog.html">Blog</a>
         </li>
       </ul>
       <ul class="nav-item registrarse">
@@ -36,116 +42,106 @@
   </nav>
 </head>
 
+
 <body>
-
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-  <button class="filtros">FILTROS ></button>
-  <button class="filtros">FILTROS ></button>
-  <button class="filtros">FILTROS ></button>
-  <button class="filtros">FILTROS ></button>
-
-
   <div class="container-fluid">
-    <div class="row">
-      <div class="col col-auto categorias">
-        <form>
-          <input type="search" placeholder="¿Que buscas?">
-          <button class="search">
-            <h6>&#128270;</h6>
-          </button>
-        </form>
-        <ul>
-          <li>Categorias:</li>
-          <li>
-            <ul>
-              <li>Especie:</li>
-              <li>
-                <input id="perros" type="checkbox">
-                <label for="perros">Perros</label>
-              </li>
-              <li>
-                <input id="gatos" type="checkbox">
-                <label for="gatos">Gatos</label>
-              </li>
-              <li>
-                <input id="aves" type="checkbox">
-                <label for="aves">Aves</label>
-              </li>
-              <li>
-                <input id="otros" type="checkbox">
-                <label for="otros">Otros</label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Edad:</li>
-              <li>
-                <input id="cachorro" type="checkbox">
-                <label for="cachorro">Cachorro (&#60;1 año)</label>
-              </li>
-              <li>
-                <input id="adulto" type="checkbox">
-                <label for="adulto">Adulto (1 - 6 años)</label>
-              </li>
-              <li>
-                <input id="abuelito" type="checkbox">
-                <label for="abuelito">Abuelito (&#62;6 años)</label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Sexo:</li>
-              <li>
-                <input id="macho" type="checkbox">
-                <label for="macho">Macho</label>
-              </li>
-              <li>
-                <input id="hembra" type="checkbox">
-                <label for="hembra">Hembra</label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Tamaño:</li>
-              <li>
-                <input id="pequeño" type="checkbox">
-                <label for="pequeño">Pequeño (&#60; 15Kg)</label>
-              </li>
-              <li>
-                <input id="mediano" type="checkbox">
-                <label for="mediano">Mediano (15 - 25Kg)</label>
-              </li>
-              <li>
-                <input id="grande" type="checkbox">
-                <label for="grande">Grande (&#62; 25Kg)</label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <form>
-              <button>Filtrar Seleccionados</button>
-            </form>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="list.html">Publicaciones recientes</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Favoritos</a></li>
-        </ul>
-      </div>
+    <div class="row background">
+      <nav id="sidebar" class="asd">
+        <div class="sidebar-header col col-auto categorias">
+          <form class="busqueda">
+            <input type="search" placeholder="¿Que buscas?">
+            <button class="search">
+              <h6>&#128270;</h6>
+            </button>
+          </form>
+          <ul>
+            <li>Categorias:</li>
+            <li>
+              <ul>
+                <li>Especie:</li>
+                <li>
+                  <input id="perros" type="checkbox">
+                  <label for="perros">Perros</label>
+                </li>
+                <li>
+                  <input id="gatos" type="checkbox">
+                  <label for="gatos">Gatos</label>
+                </li>
+                <li>
+                  <input id="aves" type="checkbox">
+                  <label for="aves">Aves</label>
+                </li>
+                <li>
+                  <input id="otros" type="checkbox">
+                  <label for="otros">Otros</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Edad:</li>
+                <li>
+                  <input id="cachorro" type="checkbox">
+                  <label for="cachorro">Cachorro (&#60;1 año)</label>
+                </li>
+                <li>
+                  <input id="adulto" type="checkbox">
+                  <label for="adulto">Adulto (1 - 6 años)</label>
+                </li>
+                <li>
+                  <input id="abuelito" type="checkbox">
+                  <label for="abuelito">Abuelito (&#62;6 años)</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sexo:</li>
+                <li>
+                  <input id="macho" type="checkbox">
+                  <label for="macho">Macho</label>
+                </li>
+                <li>
+                  <input id="hembra" type="checkbox">
+                  <label for="hembra">Hembra</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tamaño:</li>
+                <li>
+                  <input id="pequeño" type="checkbox">
+                  <label for="pequeño">Pequeño (&#60; 15Kg)</label>
+                </li>
+                <li>
+                  <input id="mediano" type="checkbox">
+                  <label for="mediano">Mediano (15 - 25Kg)</label>
+                </li>
+                <li>
+                  <input id="grande" type="checkbox">
+                  <label for="grande">Grande (&#62; 25Kg)</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <form>
+                <button>Filtrar Seleccionados</button>
+              </form>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="list.html">Publicaciones recientes</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Mascotas guardadas</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="col contenido">
+        <button id="sidebarCollapse" class="deslizable">
+          F<br>I<br>L<br>T<br>R<br>O<br>S<br>&#62;
+        </button>
         <div class="row">
           <div class="col col-12 col-lg-4 col-sm-6">
             <div class="tarjeta">
@@ -205,13 +201,27 @@
 </body>
 
 <footer class="footer-bg">
-  <div class="container">
-    <p class="float-right">
-      <a href="#"><img src="assets/favicon.ico" width="50" height="50" class="d-inline-block align-center"
-          alt="Subir"></a>
-    </p>
+  <div class="container-fluid">
+    <div class="row subir">
+      <ul>
+        <li class=""><a href="">Contactenos</a></li>
+        <li>
+          <h6>.</h6>
+        </li>
+        <li class=""><a href="">Politica de privacidad</a></li>
 
-  </div>
+      </ul>
+      <a href="#"><img src="assets/Subir.png" alt="Subir" class=""></a>
+    </div>
 </footer>
+
+<script>
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('ocultar');
+    });
+  });  
+</script>
+
 
 </html>
